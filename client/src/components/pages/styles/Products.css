@@ -1,0 +1,170 @@
+#products-container
+{
+
+}
+#prodcuts-header
+{
+    margin-top: 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;    
+    background-color: #fcfcfc;
+    gap: 10px;    
+}
+#product-header-left
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#restaurant-img-container:hover
+{
+    box-shadow: 0 0 0 5px #00000010;
+}
+#restaurant-img-container:active
+{
+    transform: scale(0.95);
+}
+#prodcuts-header p
+{
+    font-size: x-large;
+}
+#product-header-right
+{
+    display: flex;
+    align-items: center;    
+    gap: 10px;  
+}
+#products-main
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px 20px 20px 20px;
+}
+footer
+{
+    margin-top: 100px;   
+}
+#restaurant-img
+{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-position: center;
+    object-fit: cover;
+    cursor: pointer;
+}
+#products-loader
+{
+    position: fixed;    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fcfcfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#restaurant-name div .bi-circle-fill
+{
+    font-size: xx-small;
+    color: var(--success-color);
+}
+#restaurant-name
+{
+    display: flex;
+    flex-direction: column;    
+    align-items: left;
+    font-weight: bold;
+    align-self: flex-start;
+}
+#restaurant-name div
+{
+    font-size: small;
+    align-self: flex-start;
+    display: flex;
+    gap: 5px;
+    font-weight: normal;
+}
+#products-back-btn .tool-tip
+{
+    font-size: 18px;
+}
+#restaurant-img-container
+{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    position: relative;
+}
+#restaurant-img-loader
+{
+    border-radius: 50%;
+    background-color: #fff5f4;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;    
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+#no-products
+{
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;    
+    border-radius: 5px;
+    box-shadow: var(--main-bs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#no-products-ill
+{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: no-products-ill-animate 1s forwards;
+    opacity: 0;    
+}
+#no-products-ill img
+{
+    height: 150px;
+}
+@keyframes no-products-ill-animate
+{
+    to
+    {
+        opacity: 1;        
+    }    
+}
+@media screen and (max-width: 860px) 
+{
+    #prodcuts-header
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    #product-header-right
+    {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+    #product-header-right .select-box-container
+    {
+        width: 100%;
+    }
+}

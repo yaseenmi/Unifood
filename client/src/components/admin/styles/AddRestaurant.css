@@ -1,0 +1,130 @@
+/* Add Restaurant Container */
+#admin-add-res-container{
+    width:80%;
+    height: 700px;
+    padding: 60px;
+    background: white;
+    box-shadow: 0 4px 14px 0 rgba(17,69,134,0.10);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#admin-add-res-container h2{
+
+}
+
+#admin-add-res-container form > div {
+    padding:20px 0px;
+}
+
+/* IMAGE UPLOAD */
+#admin-add-res-container #img-upload{
+    width:350px;
+    height:350px;
+    cursor: pointer;    
+}
+#admin-add-res-container .upload-icon{
+    background: #f2f2f2;
+    transition: .2s opacity;
+}
+#admin-add-res-container .upload-icon i{
+    font-size: 3em;
+    color:rgb(65, 65, 65);
+}
+#admin-add-res-container #img-upload:hover .upload-icon{
+    opacity: 0.6;
+}
+#admin-add-res-container .upload-loader{
+    background: #f2f2f2;
+    transition: .2s opacity;
+    cursor: progress;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#admin-add-res-container .generate-pass{
+    position: absolute;
+    top: 50%;
+    left:95%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+#admin-add-res-container .generate-pass > button {
+    background: none;
+    border:none;
+}
+#admin-add-res-container .generate-pass > button i{
+    font-size: 25px;
+    color:gray;
+}
+#admin-add-res-container .passinp .default-text-box{
+    color:gray !important;
+}
+/* INOUT WIDTH */
+#admin-add-res-container .default-text-box-container,
+#admin-add-res-container .text-box-inner-container,
+#admin-add-res-container .select-box-container,
+#admin-add-res-container .default-rich-text-box,
+#admin-add-res-container .rich-text-box-inner-container{ 
+    width:100% !important; 
+}
+
+#admin-add-res-container .default-text-box
+{
+    padding-left:10px; padding-right: 10px;
+}
+
+#admin-add-res-container .SubmitBtn-inactive > button{
+    background: gray !important;
+    border: 1px solid gray;
+    cursor: default;
+}
+
+
+#admin-add-res-container .bad-response, #admin-add-res-container .good-response, #admin-add-res-container .loading-response{
+    padding: 20px !important;
+}
+#admin-add-res-container .bad-response{
+    background: rgba(199, 141, 141, 0.116);
+    border-left: 4px solid #ff4d4dbb;
+}
+#admin-add-res-container .bad-response span{
+    color:#ff4d4d;
+}
+#admin-add-res-container .good-response{
+    background: rgba(0, 128, 0, 0.137);
+    border-left: 4px solid #5cd65cbc;   
+}
+#admin-add-res-container .good-response span{
+    color:#5cd65c;
+}
+#admin-add-res-container .loading-response{
+    background: linear-gradient(-45deg, #f2f2f2, #9be2fa,#f2f2f2, #9be2fa);
+	animation: gradient 5s ease infinite;
+    border-left: 4px solid #0066ffa8;  
+    background-size: 400% 400%; 
+}
+#admin-add-res-container .loading-response span{
+    color: #2c80ff81;
+    animation: text-gradient  5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+.tab-control-container
+{
+
+}
+.tab-control-header
+{
+    display: flex;
+    align-items: stretch;
+    overflow: auto;
+}
+.tab-control-header::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.tab-control-main
+{
+    background-color: var(--secondry-text-color);
+    min-height: 400px;    
+    border: 0 solid #eee;
+    border-top-width: 1px;
+    border-bottom-width: 1px;    
+}
+.tab-control-main > div:nth-child(1)
+{
+  transform: translateX(-50px);
+  animation: tab-transition-animation .2s forwards ease-in-out;
+  opacity: 0;
+}
+@keyframes tab-transition-animation
+{
+    to    
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

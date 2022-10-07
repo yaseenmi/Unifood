@@ -1,0 +1,26 @@
+#recent-orders-container
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;            
+}
+#no-orders-ill
+{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: no-products-ill-animate 1s forwards;
+    opacity: 0;
+    margin-top: 40px;
+}
+#no-orders-ill img
+{
+    height: 150px;
+}
+#no-orders-ill p
+{
+    margin-top: 20px;
+}

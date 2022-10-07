@@ -1,0 +1,41 @@
+.sidebar {
+  background: #233142;
+  min-width: 300px;
+  overflow: auto;
+}
+.sidebar:hover::-webkit-scrollbar-thumb
+{
+  background-color: hsl(213, 31%, 30%) !important;
+}
+.sidebar::-webkit-scrollbar-thumb
+{
+  background-color: hsl(213, 31%, 20%) !important;
+}
+.links {
+  margin-top: 115px;
+  padding: 0;
+}
+.links li {
+  transition: 0.3s;
+}
+.links li:hover {
+  opacity: 0.7;
+  background: rgba(0, 0, 0, 0.37);
+}
+.links li a .icon {
+  margin-right: 20px;
+  display: inline-block;
+}
+.links li a span,
+.links li a span i {
+  font-size: 20px;
+  color: var(--secondry-text-color);
+}
+li a {
+  display: flex;
+  flex-basis: auto;
+  padding: 15px;
+}
+.restaurant-active-sidebar {
+  background: #ff6348;
+}

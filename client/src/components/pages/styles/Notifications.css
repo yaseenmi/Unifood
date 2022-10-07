@@ -1,0 +1,99 @@
+#notifications-container
+{
+
+}
+#notifications-title
+{
+    font-size: x-large;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 20px 20px 20px;
+}
+#notifications-title div:nth-child(2)
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#notifications-title div:nth-child(2) i
+{
+    font-size: x-large;
+}
+#notifications-title div:nth-child(1)
+{    
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: xx-large;
+}
+#notifications-title div:nth-child(1) i
+{
+    font-size: xx-large;
+}
+#notifications-inner
+{
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+}
+#notifications-table-head
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+    font-weight: bold;
+    padding: 20px 0;
+} 
+#notifications-table-body
+{
+    background-color: var(--secondry-text-color); 
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: var(--main-bs);
+    border: 1px solid #eee;    
+    position: relative;
+    min-height: 200px;
+}
+#no-notifications-items
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+#no-notifications-items img
+{
+    height: 150px;
+}
+#no-notifications-items p
+{
+    text-align: center;
+}
+#notifications-table-body-loading
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--secondry-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+#notifications-table-body-loader
+{
+    
+}
+@media screen and (max-width: 500px) 
+{
+    #notifications-title div:nth-child(1)
+    {
+        display: none;
+    }
+}

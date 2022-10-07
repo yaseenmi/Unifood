@@ -1,0 +1,86 @@
+.select-box-container 
+{
+    width: 250px;    
+    position: unset;
+    user-select: none;
+    -moz-user-select: none;
+}
+.select-box-toggle 
+{
+    background: var(--secondry-text-color);
+    display: flex;
+    font-size: 1.1em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid #eee;
+}
+.select-box-toggle .bi
+{
+    transition: .3s;
+}
+.select-box-toggle:focus
+{
+    box-shadow: 0 0 0 3px #FF634840;
+}
+.select-box-toggle:hover
+{
+    
+}
+.select-box-container span 
+{
+
+}
+.select-box-container .bi
+{
+
+}
+.select-box-items 
+{
+    padding: 10px 0;    
+    background: var(--secondry-text-color);
+    border: 1px solid #eee;
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+    top: 30px;
+    display: none;
+    z-index: 1;
+    max-height: 300px;
+    overflow-y: auto;
+    transition: .2s;
+    width: 100%;
+}
+.select-box-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1em;    
+    padding: 5px 10px;   
+    transition: 0 !important; 
+}
+.select-box-item-selected
+{
+
+}
+.select-box-item-selected .bi
+{    
+    opacity: 1 !important;
+}
+.select-box-item:focus
+{
+    box-shadow: 0 0 0 3px #FF634840;
+}
+.select-box-item:hover
+{
+    background: #fff5f4;
+}
+.select-box-item .bi
+{
+    font-size: 1.3em;
+    opacity: 0;
+}

@@ -1,0 +1,11 @@
+#product-discount-in{
+    display: none;
+}
+#add-disconut-btn
+{
+    background-color: var(--secondry-text-color);
+}
+#add-disconut-btn div
+{
+    color: var(--primary-color);
+}

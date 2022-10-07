@@ -1,0 +1,16 @@
+.circle-loader
+{
+    border: 5px solid transparent;
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    border-right-color: var(--primary-color);    
+    animation: loading-animation .5s infinite linear;
+    margin: 0;
+}
+@keyframes loading-animation
+{
+    to
+    {        
+        transform: rotate(360deg);
+    }
+}

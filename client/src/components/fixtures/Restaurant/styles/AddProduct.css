@@ -1,0 +1,12 @@
+.custom-file-input {
+display: none;  }
+.custom-file-label{
+    cursor: pointer;
+}
+.label{
+    padding-bottom: 10px;
+}
+.form-add-product .default-text-box-container, .form-add-product .default-rich-text-box-container 
+{
+    width: 100%;
+}

@@ -1,0 +1,38 @@
+.tab-link-container
+{    
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 8px;
+    color: var(--text-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.tab-link-container:hover
+{
+    background-color: #eee;
+    color: var(--text-color);
+}
+.tab-link-container:active
+{
+    background-color: #ccc;
+}
+.tab-link-active
+{
+    background-color: #fff5f4 !important;    
+    color: var(--primary-color) !important;
+}
+.tab-link-active i
+{
+    color: var(--primary-color) !important;
+}
+.tab-link-container i
+{
+    color: var(--text-color);
+}

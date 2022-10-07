@@ -1,0 +1,110 @@
+#customer-enter-container
+{
+    transform: none;
+}
+#form-register-container
+{
+    display: flex;
+    height: 100vh;  
+    align-items: center;
+    justify-items: flex-start;
+}
+#form-register-intro
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin-right: 60px;
+}
+#form-register-intro h1
+{
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+#form-register-intro img
+{
+    width: 300px;
+}
+#form-register
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    margin-left: 60px;
+}
+#form-register .default-text-box-container
+{
+    margin-bottom: 10px;    
+    width: 300px;
+}
+#password-in .text-box-error
+{
+    width: 300px;
+}
+#form-register .default-password-box-container
+{
+    width: 300px;
+}
+#form-register input[type="number"]
+{
+    -moz-appearance: textfield;
+}
+#form-register input
+{
+    width: 300px;
+}
+#form-register button:nth-of-type(1)
+{
+    margin-top: 20px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+#form-general-error
+{
+    color: var(--error-color);    
+    align-items: center;
+    justify-content: left;
+    display: none;    
+    padding: 20px 10px;    
+    margin-bottom: 10px;
+    font-size: smaller;
+    width: 300px;
+    background: hsl(4, 90%, 95%);
+    font-weight: bold;
+}
+#form-general-error i
+{
+    color: var(--error-color);
+    margin-right: 10px;
+}
+@media screen and (max-width: 800px)
+{
+    #form-register-container
+    {
+        flex-direction: column;         
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        margin-top: 100px;
+    }
+    #form-register
+    {
+        margin-left: 0;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+    #form-register-intro
+    {
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        width: 100%;
+    }
+
+} 

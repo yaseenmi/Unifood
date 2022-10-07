@@ -1,0 +1,119 @@
+.customer-review-card-container
+{
+    padding: 30px;
+    background-color: var(--secondry-text-color);
+    border-radius: 5px;
+    border: 1px solid #eee;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: customer-review-card-container-animation .4s forwards;
+}
+@keyframes customer-review-card-container-animation
+{
+    to
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.customer-review-card-left
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.customer-review-card-right
+{
+    display: flex;
+    gap: 20px;
+}
+.customer-review-card-right p
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;  
+    word-break: break-all;  
+}
+.customer-review-card-right i
+{
+    font-size: x-large;
+    color: gray;
+    cursor: pointer;
+}
+.review-liked
+{
+    color: var(--primary-color) !important;
+}
+.customer-review-card-top
+{
+    display: flex;
+    gap: 10px;
+}
+.customer-review-card-photo:hover
+{
+    box-shadow: 0 0 0 5px #00000010;
+}
+.customer-review-card-photo:active
+{
+    transform: scale(0.95);
+}
+.customer-review-card-photo
+{
+    height: 50px;
+    width: 50px;
+    object-position: center;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.customer-review-card-name-time
+{
+
+}
+.customer-review-card-name
+{
+    font-weight: bold;
+}
+.customer-review-card-time
+{
+    font-size: small;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.customer-review-card-time i
+{
+    font-size: small;
+}
+.customer-review-card-bottom-editable
+{
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+.customer-review-card-bottom-editable:focus
+{
+
+}
+@media screen and (max-width: 700px) 
+{
+    .customer-review-card-container
+    {
+        padding: 15px;
+        flex-direction: column;
+        gap: 5px;
+    } 
+    .customer-review-card-right 
+    {
+        align-self: flex-end;
+    }
+    .customer-review-card-right p
+    {
+        gap: 0;
+    }
+}

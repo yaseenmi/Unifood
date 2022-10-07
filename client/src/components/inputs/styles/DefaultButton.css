@@ -1,0 +1,84 @@
+.default-fill-btn, .default-outline-btn
+{
+    padding: 8px 15px;
+    border-radius: 3px;
+    outline: none !important;
+    -webkit-box-sizing: border-box;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.default-fill-btn
+{
+    background: var(--primary-color);
+    color: var(--secondry-text-color);
+    border: 1px solid var(--primary-color);
+}
+.default-fill-btn *
+{
+    color: var(--secondry-text-color);
+}
+.default-fill-btn:focus
+{
+    box-shadow: 0 0 0 3px #FF634840;
+}
+.default-fill-btn:hover:not(:disabled), .default-outline-btn:hover:not(:disabled)
+{
+    opacity: 0.8;
+    transform: translate(0, -2px);
+    box-shadow: 2px 2px 20px 0 #00000010;
+}
+
+.default-outline-btn
+{
+    background: var(--secondry-text-color);
+    color: var(--secondry-color);
+    border: 1px solid var(--secondry-color);
+}
+.default-outline-btn i
+{
+    color: var(--text-color);
+}
+.default-outline-btn:focus
+{
+    box-shadow: 0 0 0 3px #23314240;
+}
+.xsmall
+{
+    font-size: 12px;
+}
+.small
+{
+    font-size: 16px;
+}
+.medium
+{
+    font-size: 18px;
+}
+.large
+{
+    font-size: 24px;
+}
+.xlarge
+{
+    font-size: 30px;
+}
+.default-fill-btn:disabled, .default-outline-btn:disabled
+{
+    opacity: .5;
+    cursor: not-allowed;
+}
+@media screen and (max-width: 800px)
+{
+    .default-fill-btn:hover:not(:disabled), .default-outline-btn:hover:not(:disabled)
+    {
+        transform: translate(0, 0);
+        opacity: 1;
+        transition: 0s;
+    }   
+    .default-fill-btn:active:not(:disabled), .default-outline-btn:active:not(:disabled)
+    {        
+        opacity: .8;
+    }
+}

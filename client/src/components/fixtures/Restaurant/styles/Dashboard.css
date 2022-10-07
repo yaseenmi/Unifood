@@ -1,0 +1,151 @@
+.restaurant-pieChart-container {
+  display: flex;
+  gap: 40px;
+}
+.restaurant-pieChart-test1 {
+  background-color: white;
+  width: 50%;
+  height: 400px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.restaurant-pieChart-test2 {
+  background-color: white;
+  width: 50%;
+  height: 400px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.restaurant-pieChart-clarification ul li {
+  position: relative;
+  font-size: 20px;
+}
+.restaurant-pieChart-clarification ul li::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -20px;
+  top: 9.5px;
+}
+
+.counts-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.restaurant-box2,
+.restaurant-box3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 32%;
+  padding: 50px;
+  height: 200px;
+  border-radius: 4px;
+  box-shadow: 0 22px 40px #00000010;
+  transition: 0.1s;
+}
+.restaurant-box1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 32%;
+  padding: 50px;
+  height: 200px;
+  border-radius: 4px;
+  box-shadow: 0 22px 40px #00000010;
+  transition: 0.1s;
+  position: relative;
+}
+.profit {
+  width: 10%;
+  border: none;
+  position: absolute;
+  width: 150px;
+  top: 0px;
+  top: 15px;
+  padding: 5px;
+}
+.restaurant-box1 span,
+.restaurant-box2 span,
+.restaurant-box3 span {
+  color: #f2f2f2;
+  font-size: 30px;
+}
+.restaurant-box1 span i,
+.restaurant-box2 span i,
+.restaurant-box3 span i {
+  color: #f2f2f2;
+  font-size: 50px;
+}
+/* .box1:hover, .box2:hover, .box3:hover{
+        transform: scale(1.02);
+        padding-bottom: 12px;
+    } */
+
+.restaurant-box1 {
+  background: #00cc00;
+  background: -webkit-linear-gradient(to left, #00e600, #1aff1a);
+  background: linear-gradient(to left, #66ff66, #00cc00);
+}
+.restaurant-box2 {
+  background: #f7971e;
+  background: -webkit-linear-gradient(to left, #ffd200, #f7971e);
+  background: linear-gradient(to left, #ffd200, #f7971e);
+}
+.restaurant-box3 {
+  background: #ff6348;
+  background: -webkit-linear-gradient(to left, #ff674d, #ff674d, #ff7d66);
+  background: linear-gradient(to left, #ff674d, #ff674d, #ff7d66);
+}
+path {
+  transition: 0.2s;
+}
+path:hover {
+  opacity: 0.8;
+}
+h4 {
+  color: black;
+}
+.restaurant-dashboard-table td {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.restaurant-dashboard-table tr {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  justify-content: space-between;
+  margin: 10px;
+}
+.restaurant-dashboard-table th {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.restaurant-dashboard-table {
+  width: 100%;
+  margin: 5px;
+}
+.restaurant-pieChart-header {
+  border-bottom: 2px solid #efefef;
+  text-align: left;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.select {
+  height: 50px;
+  border: none;
+}
+.restaurant-counts-container {
+  display: flex;
+  padding: 15px;
+  gap: 30px;
+}

@@ -1,0 +1,14 @@
+.radio-button-container
+{
+
+}
+.radio-button:checked
+{
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.radio-button:focus
+{
+    box-shadow: 0 0 0 3px #FF634840;
+    border: 1px solid var(--primary-color);
+}

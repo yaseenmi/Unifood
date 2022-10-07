@@ -1,0 +1,144 @@
+.admin-main-content {
+  flex: 1;
+  padding: 10px 30px;
+  padding-top: 95px;
+}
+.admin-display-none {
+  display: none !important;
+}
+/* FLEX BOX */
+.admin-flex {
+  display: flex;
+}
+.admin-flex-wrap {
+  flex-wrap: wrap;
+}
+.admin-flex-col {
+  flex-direction: column;
+}
+
+.admin-justify-center {
+  justify-content: center;
+}
+.admin-justify-around {
+  justify-content: space-around;
+}
+.admin-justify-between {
+  justify-content: space-between;
+}
+.admin-justify-start {
+  justify-content: flex-start;
+}
+.admin-justify-end {
+  justify-content: flex-end;
+}
+
+.admin-align-center {
+  align-items: center;
+}
+.admin-align-between {
+  align-items: space-between;
+}
+/* LAYOUT 2 BOXES */
+
+.admin-row {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch; 
+  gap: 10px;   
+}
+.admin-row .right-side
+{
+  align-self: flex-start;
+}
+.left-side form
+{
+  display: flex;
+  flex-direction: column;
+}
+
+/* CONTAINER WITH CENTERED ELEMENT */
+.admin-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 100px 0;
+}
+
+/* UTIL */
+.admin-border-box {
+  box-sizing: border-box;
+}
+
+.admin-w100 {
+  width: 100%;
+}
+.admin-h100 {
+  height: 100%;
+}
+.admin-vh100 {
+  height: 100vh;
+}
+
+.admin-text-center {
+  text-align: center;
+}
+
+.admin-relative {
+  position: relative;
+}
+.admin-absolute {
+  position: absolute;
+}
+
+.admin-absolute-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.admin-absolute-cover {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.admin-background-f2 {
+  background: #f2f2f2;
+}
+.admin-background-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.admin-mi-auto {
+  margin-inline: auto;
+}
+
+.admin-full-opacity {
+  opacity: 1;
+} /* OPACITY */
+.admin-zero-opacity {
+  opacity: 0;
+}
+
+.admin-overflow-auto {
+  overflow: auto;
+}
+
+/* INPUT FILE */
+.admin-input-file-reset {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  outline: none;
+}
+
+.admin-w80 {
+  width: 80%;
+}

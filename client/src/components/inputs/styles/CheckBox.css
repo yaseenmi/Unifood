@@ -1,0 +1,22 @@
+.check-box:checked
+{
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.check-box:focus
+{
+    box-shadow: 0 0 0 3px #FF634840;
+    border: 1px solid var(--primary-color);
+}
+.check-box
+{
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.check-box-container label
+{
+    user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+}

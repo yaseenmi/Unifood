@@ -1,0 +1,71 @@
+.admin-user-details .user-info{
+    background: white;
+    border-bottom: 5px solid var(--secondry-color);
+    padding: 40px;
+}
+.admin-user-details .user-info img{
+    width: 300px;
+}
+.admin-user-details .active-user{
+    color:rgb(0, 195, 0)
+}
+.admin-user-details .banned-user{
+    color: crimson
+}
+.admin-user-details .user-op-btns{
+   background: white;
+   margin: 0; 
+}
+.admin-user-details .user-op-btns button{
+    margin-inline: 3px;
+}
+.admin-user-details .multi-container{
+    background: white;
+}
+.admin-order-container, .admin-send-container{
+    display: none;
+}
+.admin-review-container .review-detail{
+    padding: 40px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.admin-review-container .review-detail .review-date{
+    color: #8c8c8c;
+}
+.admin-send-container{
+    padding: 50px;
+    margin-bottom: 20px;;
+}
+
+.admin-send-container #mycustomer-textarea, .admin-send-container .default-rich-text-box-container{
+    width: 100%;
+}
+
+
+.admin-order-container table{
+    border-collapse: none;
+    width: 100%;
+    margin-top:20px;
+    border: 1px solid #2331421e;
+    display: relative;
+}
+.admin-order-container table th, .admin-order-container table td{
+    padding: 12px;
+}
+.admin-order-container table tr:nth-child(even){background-color: white;}
+.admin-order-container table tr:hover {background-color: #ddd;}
+
+.admin-order-container table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--secondry-color);
+    color: white;
+}
+
+.admin-noti-bad{
+    color:red;
+}
+.admin-noti-good{
+    color:green
+}

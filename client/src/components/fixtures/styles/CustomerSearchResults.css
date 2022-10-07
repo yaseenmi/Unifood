@@ -1,0 +1,17 @@
+.customer-search-no-results
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 40px 10px;
+}
+.customer-search-no-results img
+{
+    height: 150px;
+}
+.customer-search-no-results p
+{
+    text-align: center;
+}

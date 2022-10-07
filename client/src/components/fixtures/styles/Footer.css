@@ -1,0 +1,149 @@
+#footer-container
+{
+    color: var(--secondry-text-color);
+    background-image: repeating-linear-gradient(45deg, #273649 1px, transparent 2px 1%),
+    repeating-linear-gradient(-45deg, #273649 0 1px, var(--secondry-color) 2px 1%);
+    background-attachment: fixed;
+    clip-path: ellipse(100% 100% at bottom);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer-container-inner
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;    
+}
+.footer-seperator
+{
+    width: 2px;
+    height: 50px;
+    background: white;   
+    align-self: center;
+}
+#footer-container h4
+{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+#footer-container h4::selection, 
+#footer-container p::selection , 
+#footer-container span::selection
+{
+    background: #eee;
+}
+#footer-container p
+{
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+#footer-container span
+{
+    color: #ffffff90;
+}
+#footer-container span a
+{
+    color: #ffffff90;
+    transition: .3s;
+}
+#footer-container span a:hover
+{
+    color: var(--secondry-text-color);
+} 
+#footer-logo-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footer-logo-container img
+{
+    height: 40px;
+}
+#footer-logo-container p
+{
+    color: var(--secondry-text-color);
+    margin-top: 20px;
+}
+#footer-get-in-touch-container
+{
+
+}
+#footer-get-in-touch-container p
+{
+    color: var(--secondry-text-color);
+    display: flex;
+    margin-bottom: 5px;
+}
+#footer-social
+{
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+#footer-social i
+{
+    color: #ffffff90;
+    font-size: 25px;
+    transition: .3s;
+}
+#footer-social i:hover
+{
+    color: var(--secondry-text-color);
+}
+#footer-where-we-are-container
+{
+
+}
+#footer-where-we-are-container p
+{
+    color: var(--secondry-text-color);        
+}
+#footer-menu-container
+{
+
+}
+#footer-menu-container div
+{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 1000px)
+{
+    #footer-container
+    {
+        clip-path: ellipse(210% 100% at bottom);
+    }
+    #footer-container-inner
+    {
+        flex-direction: column;
+        align-items: center;            
+        width: fit-content;
+        width: -moz-fit-content;
+    }
+    .footer-seperator
+    {
+        height: 2px;
+        width: 50px;
+        margin: 30px 0;
+    }
+    #footer-menu-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer-menu-container div,
+    #footer-where-we-are-container,
+    #footer-get-in-touch-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

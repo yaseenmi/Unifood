@@ -1,0 +1,66 @@
+.recent-order-card-container
+{
+    padding: 20px;    
+    border-radius: 5px;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    box-shadow: var(--main-bs);
+}
+.recent-order-card-container:hover
+{
+    background-color: #eee;
+}
+.recent-order-card-container time
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.recent-order-card-container time i
+{
+
+}
+.recent-order-card-container span
+{
+    color: var(--success-color);
+}
+.recent-order-card-container span i
+{
+    
+}
+.recent-order-card-number
+{
+    height: 40px;
+    min-width: 40px;    
+    background-color: var(--primary-color);
+    color: var(--secondry-text-color);
+    margin-right: 5px;
+    border-radius: 5px;
+    box-shadow: var(--main-bs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recent-order-card-status
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+.recent-order-card-status i
+{
+    font-size: small;
+    color: var(--error-color);
+}
+@media screen and (max-width: 400px)
+{
+    .recent-order-card-status
+    {
+        margin-left: 0;
+    }
+}

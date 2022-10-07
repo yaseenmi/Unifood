@@ -1,0 +1,152 @@
+.customer-notification-card-container
+{
+    border: 0 solid #eee;
+    border-bottom-width: 1px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 150px;
+    padding-top: 20px;
+    transition: .3s;
+}
+.customer-notification-card-container-remove-state
+{
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.customer-notification-card-left
+{
+    display: flex;
+    align-items: flex-start;        
+    gap: 20px;
+}
+.customer-notification-card-left-inner-1
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.customer-notification-card-left-inner-2
+{
+    display: flex;
+    flex-direction: column;
+}
+.customer-notification-card-left-inner-1 div
+{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    box-shadow: var(--main-bs);
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.customer-notification-card-left i:nth-child(1)
+{
+    font-size: 25px;
+}
+.customer-notification-card-left i:nth-child(2)
+{
+    font-size: 15px;
+    position: absolute;
+    left: 80%;
+    top: 60%;
+    color: var(--primary-color);
+}
+.customer-notification-card-middle
+{
+
+}
+.customer-notification-card-from
+{
+    font-size: x-large;
+    font-weight: bold;
+}
+.customer-notification-card-description
+{
+
+}
+.customer-notification-card-right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.customer-notification-card-time
+{
+    color: var(--highlighted-text-color);
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customer-notification-card-options-container
+{
+    position: relative;
+}
+.customer-notification-card-options-container:focus-within .customer-notification-card-options
+{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+.customer-notification-card-options
+{
+    position: absolute;
+    min-width: 150px;
+    left: -110px;
+    background-color: var(--secondry-text-color);    
+    border: 1px solid #eee;
+    box-shadow: var(--main-bs);
+    user-select: none;
+    -moz-user-select: none;
+    border-radius: 5px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: right top;
+    transition: 0s visibility, .3s opacity, .2s transform;
+}
+.customer-notification-card-option
+{    
+    padding: 10px 15px;    
+}
+.customer-notification-card-option:hover
+{
+    background-color: #fff5f4;
+}
+.customer-notification-card-option:focus
+{
+    box-shadow: 0 0 0 3px #FF634840;
+}
+@media screen and (max-width: 500px) 
+{
+    .customer-notification-card-container
+    {
+        flex-direction: column;
+    }    
+    .customer-notification-card-right
+    {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+    .customer-notification-card-time
+    {
+        min-width: auto;
+        min-height: 50px;
+    }
+    .customer-notification-card-left
+    {
+        gap: 10px;
+    }
+    .customer-notification-card-from
+    {
+        font-size: 20px;
+    }
+    
+}

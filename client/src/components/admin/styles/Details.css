@@ -1,0 +1,218 @@
+.admin-details-container {
+  width: 100%;
+  height: auto;
+  margin-top: 110px;
+}
+.admin-row-1
+{
+    display: flex;
+    gap: 10px;
+}
+.left-side
+{
+    width: 400px;
+    flex: 1;
+}
+.admin-details-container .details-card > div,
+.admin-details-container .reviews-container > div {
+  width: 80%;
+  height: auto;
+  background: white;
+  box-shadow: 0 4px 14px 0 rgba(17, 69, 134, 0.1);
+}
+.admin-details-container .reviews-container > div,
+.admin-details-container .notification-container {
+  margin-inline: auto;
+}
+.admin-details-container .details-card .right-side,
+.admin-details-container .details-card .left-side {
+  padding: 50px;
+}
+.admin-details-container .img-edit-container {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.admin-details-container .info .default-fill-btn {
+  display: inline-block !important;
+}
+
+.admin-details-container .res-details-img {
+  max-width: 100%;
+}
+
+.admin-details-container .op-buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.admin-details-container .op-buttons > button {  
+  transition: 0.1s;
+}
+
+.admin-details-container .star i {
+  color: rgb(255, 208, 0);
+  margin: 0px 3px;
+}
+
+.admin-details-container .heading {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  transition: 0.1s;
+}
+.admin-details-container .heading input,
+.admin-details-container .heading h1 {
+  font-size: 2.5rem;
+}
+.admin-details-container .info p {
+  color: rgb(80, 80, 80);
+}
+.admin-details-container .pass-btns
+{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    gap: 5px;
+}
+.admin-details-container .pass-btns button {
+
+}
+
+.admin-details-container .p-info .info {
+  padding: 2px 0px;
+}
+.admin-details-container .p-info .info p i {
+  margin-right: 5px;
+}
+.admin-details-container .p-info .info p {
+  font-size: 20px;
+}
+
+.admin-details-container .closed {
+  color: red;
+}
+.admin-details-container .opened {
+  color: green;
+}
+
+.admin-details-container .table-container .default-text-box {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.admin-details-container .upload-icon-edit {
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f2f2f2;
+  transition: 0.2s opacity;
+  opacity: 0;
+}
+.admin-details-container .upload-icon-edit i {
+  font-size: 3em;
+  color: rgb(65, 65, 65);
+}
+.admin-details-container .upload-icon-edit:hover {
+  opacity: 0.9;
+}
+
+.admin-details-container .info .default-text-box,
+.admin-details-container .heading .default-text-box {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.admin-details-container .reviews-container > div {
+  width: 80%;
+  height: auto;
+  background: white;
+  box-shadow: 0 4px 14px 0 rgba(17, 69, 134, 0.1);
+}
+
+.admin-details-container .reviews-container {
+  display: none;
+}
+.admin-details-container .reviews-card {
+  padding: 40px;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+.admin-details-container .reviews-card .like,
+.admin-details-container .reviews-card .like i {
+  color: green;
+}
+.admin-details-container .reviews-card .dislike,
+.admin-details-container .reviews-card .dislike i {
+  color: red;
+}
+.admin-details-container .reviews-card .date {
+  color: gray;
+}
+.admin-details-container .reviews-card h4 {
+  color: rgb(75, 75, 75);
+}
+
+.admin-details-container .op-buttons .default-fill-btn,
+.admin-details-container .op-buttons .default-outline-btn {
+  display: unset !important;
+}
+
+.admin-details-container .notification-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.198);
+}
+.admin-details-container .notification-container > div {
+  position: absolute;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  padding: 60px;
+}
+.admin-details-container .success-container {
+  position: absolute;
+  background: white;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 10px 15px;
+  border-radius: 4px;
+
+  display: none;
+}
+.admin-details-container #mycustomer-textarea {
+  width: 100%;
+}
+.admin-details-container .noti-good-container {
+  border: 2px solid #33cc33;
+}
+.admin-details-container .noti-bad-container {
+  border: 2px solid red;
+}
+.admin-details-container .noti-good i,
+.admin-details-container .noti-bad i,
+.admin-details-container .noti-good span,
+.admin-details-container .noti-bad span {
+  font-size: 22px;
+}
+.admin-details-container .noti-good i,
+.admin-details-container .noti-good span {
+  color: green;
+}
+.admin-details-container .noti-bad i,
+.admin-details-container .noti-bad span {
+  color: red;
+}

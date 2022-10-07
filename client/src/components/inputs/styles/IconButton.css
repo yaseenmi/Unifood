@@ -1,0 +1,71 @@
+.icon-btn
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    position: relative;
+}
+.icon-btn:disabled
+{    
+    cursor: default;
+}
+.icon-btn:disabled i
+{
+    color: #ccc;
+}
+.icon-btn:hover:not(:disabled)
+{
+    background: #eee;
+}
+.icon-btn:active:not(:disabled)
+{
+    background: #ccc;
+}
+.icon-btn:focus
+{
+    box-shadow: 0 0 0 3px #23314240;
+}
+.icon-btn:hover:not(:disabled) .tool-tip
+{
+    visibility: visible;
+    opacity: 1;
+    top: 120%;
+}
+.icon-btn-label
+{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    box-sizing: border-box;
+    min-height: 15px;
+    min-width: 15px;
+    background: var(--error-color);    
+    padding: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;    
+    color: white;
+    font-size: 10px;    
+    margin: 0;
+}
+@media screen and (max-width: 800px)
+{
+    .icon-btn:hover .tool-tip
+    {
+        visibility: hidden;
+        opacity: 0;
+        top: 100%;
+        display: none;
+    }
+    .icon-btn:hover
+    {
+        background: transparent;
+    }
+    .icon-btn:focus
+    {
+        box-shadow: unset;
+    }
+}

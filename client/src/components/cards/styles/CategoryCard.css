@@ -1,0 +1,109 @@
+.category-card-container
+{
+    padding: 30px;        
+    display: flex;
+    gap: 30px;
+    border: 1px solid #eee;    
+    border-radius: 5px;
+    box-shadow: var(--main-bs);
+    background-color: var(--secondry-text-color);
+}
+.category-card-container img
+{
+    max-width: 200px;
+    min-width: 200px;
+    height: 100%;
+    border-radius: 5px;
+    object-position: center;
+    object-fit: cover;        
+    cursor: pointer;
+}
+.category-card-image-loader
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #fff5f4;
+    transition: .3s;    
+}
+.category-card-image
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.category-card-image .circle-loader
+{
+}
+.category-card-inner
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+}
+.category-card-container h1
+{
+    font-size: xx-large;
+    word-break: break-word;
+    font-weight: bold;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+.category-card-container h1:hover
+{
+    color: var(--primary-color);
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+}
+.category-card-container p
+{
+    word-break: break-word;
+    color: var(--highlighted-text-color);
+}
+.category-card-container button
+{
+    align-self: flex-end;
+}
+@media screen and (max-width: 720px) 
+{
+    .category-card-container
+    {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .category-card-container .default-fill-btn
+    {
+        align-self: stretch;
+    }
+    .category-card-inner
+    {
+        text-align: center;
+    }
+    .category-card-image
+    {
+        min-height: 200px;
+    }
+    .category-card-container img
+    {
+        min-width: 100%;
+    }
+    .category-card-container h1:hover
+    {
+        color: unset;
+    }
+    .category-card-container h1:active
+    {
+        color: var(--primary-color);
+    }
+}

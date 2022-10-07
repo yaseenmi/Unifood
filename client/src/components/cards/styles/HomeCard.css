@@ -1,0 +1,44 @@
+.home-card-container
+{
+    padding: 30px;
+    background-color: white;
+    border: 0 solid var(--primary-color);
+    border-bottom-width: 5px;
+    width: fit-content;
+    width: -moz-fit-content;
+    border-radius: 5px;
+    box-shadow: var(--main-bs);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.home-card-container i
+{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #fff5f4;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+.home-card-container span
+{
+    font-size: xx-large;
+    font-weight: bold;    
+}
+.home-card-container p
+{
+    color: var(--highlighted-text-color);    
+}
+@media screen and (max-width: 780px) 
+{
+    .home-card-container
+    {
+        padding: 30px 15px;
+    }    
+}

@@ -1,0 +1,12 @@
+.footer-link
+{
+    color: white;
+    transition: .3s;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.footer-link:hover
+{
+    color: #ffffff90;
+}

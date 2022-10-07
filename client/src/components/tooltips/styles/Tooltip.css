@@ -1,0 +1,28 @@
+.tool-tip
+{
+    position: absolute;
+    background: var(--secondry-color);
+    color: var(--secondry-text-color);
+    padding: 5px 10px;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);    
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear, top 0.2s ease;
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px 0 #00000030;
+    white-space: nowrap;
+    z-index: 10000000;
+}
+.tool-tip::after
+{
+    content: '';
+    height: 10px;
+    width: 10px;
+    transform: translateX(-50%) rotate(45deg);
+    position: absolute;
+    top: -5px;
+    left: 50%;    
+    background: var(--secondry-color);
+}

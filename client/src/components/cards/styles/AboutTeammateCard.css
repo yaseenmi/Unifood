@@ -1,0 +1,49 @@
+.about-teammate-card-container
+{
+    padding: 20px;
+    background-color: var(--secondry-text-color);
+    box-shadow: var(--main-bs);
+    border: 1px solid #eee;
+    border-bottom-width: 5px;
+    border-bottom-color: var(--primary-color);
+    border-radius: 5px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.about-teammate-card-container:hover img
+{
+    filter: grayscale(0);
+}
+.about-teammate-card-container img
+{
+    height: 130px;
+    width: 130px;
+    object-fit: cover;    
+    border-radius: 50%;    
+    filter: grayscale(100%);
+    transition: .3s;
+}
+.about-teammate-card-details
+{
+
+}
+.about-teammate-card-details label
+{
+    font-weight: bold;
+}
+.about-teammate-card-details p
+{
+    color: var(--highlighted-text-color);
+    font-style: italic;
+}
+.about-teammate-card-social
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

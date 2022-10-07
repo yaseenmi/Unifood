@@ -1,0 +1,41 @@
+#profile-settings-container
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;    
+}
+#profile-settings-container .default-text-box-container,
+#profile-settings-container .default-password-box-container,
+#profile-settings-container .password-box-inner-container
+{
+    width: 100%;
+}
+.profile-settings-title:not(:nth-of-type(1))
+{
+    margin-top: 30px;
+}
+.profile-settings-title
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.profile-settings-title i
+{
+    font-size: small;
+}
+#save-changes-btn
+{
+    align-self: flex-end;
+    margin-top: 10px;
+}
+#reset-my-account-btn,
+#delete-my-account-btn,
+#log-out-btn
+{
+    background-color: var(--error-color);    
+}

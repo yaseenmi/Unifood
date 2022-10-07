@@ -1,0 +1,48 @@
+.default-text-box-container
+{
+    width: fit-content;
+}
+.default-text-box
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: .3s;
+}
+.text-box-inner-container
+{
+    position: relative;
+}
+.default-text-box:hover
+{
+    border-color: #ccc;    
+}
+.default-text-box:focus
+{
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px #FF634840;
+}
+.default-text-box:disabled
+{
+    opacity: .5;
+}
+.text-box-error
+{
+    color: var(--error-color);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    display: none; 
+    font-size: smaller;
+    font-weight: bold;
+}
+.text-box-error i
+{
+    color: var(--error-color);
+    margin-right: 10px;
+}

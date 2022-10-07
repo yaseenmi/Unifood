@@ -1,0 +1,141 @@
+.services-container
+{
+
+}
+#services-details-section
+{
+    padding: 50px 10px;    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#services-details-section label
+{
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+#services-details-inner
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#services-details-section details
+{
+    background-color: var(--secondry-text-color);
+    box-shadow: var(--main-bs);
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+#services-details-section details[open] > summary
+{
+    background-color: var(--primary-color);
+    color: var(--secondry-text-color);
+}
+#services-details-section details[open] > summary i
+{
+    transform: rotate(90deg);
+    color: var(--secondry-text-color);
+}
+#services-details-section summary
+{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: x-large;
+}
+#services-details-section summary i
+{
+    transition: transform .3s;
+}
+#services-details-inner p
+{
+    padding: 20px;
+    font-style: 20px;
+}
+#services-pricing-section 
+{
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#services-pricing-section > label
+{
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+#services-pricing
+{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 0 10px;
+}
+.services-pricing-card:nth-child(2)
+{
+    transform: scale(1.1);
+    border-color: var(--primary-color);    
+}
+.services-pricing-card
+{
+    width: 300px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;    
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: var(--main-bs);
+    background-color: var(--secondry-text-color);
+}
+.services-pricing-card label
+{
+    text-align: center;
+}
+.services-pricing-card span
+{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.services-pricing-features
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.services-pricing-features p
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.services-pricing-features i
+{
+
+}
+.services-pricing-features .bi-x-square-fill
+{
+    color: var(--error-color);
+}
+.services-pricing-features .bi-check-square-fill
+{
+    color: var(--success-color);
+}
+#subscribe-btn
+{
+    width: 100%;
+}
+@media screen and (max-width: 660px)
+{
+    #services-pricing
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+    }    
+}

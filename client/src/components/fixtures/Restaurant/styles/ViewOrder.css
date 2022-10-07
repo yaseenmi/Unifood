@@ -1,0 +1,5 @@
+.delivered{
+    display: none;
+    color: green;
+    font-size: 30px;
+}

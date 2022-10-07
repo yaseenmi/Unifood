@@ -1,0 +1,9 @@
+.custom-file-input {
+  display: none;
+}
+.custom-file-label {
+  cursor: pointer;
+}
+.form-group .default-rich-text-box-container {
+  width: 100%;
+}

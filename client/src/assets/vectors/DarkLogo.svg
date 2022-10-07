@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="48.93" viewBox="0 0 100 48.93">
+  <defs>
+    <clipPath id="clip-DarkLogo">
+      <rect width="100" height="48.93"/>
+    </clipPath>
+  </defs>
+  <g id="DarkLogo" clip-path="url(#clip-DarkLogo)">
+    <g id="Group_1" data-name="Group 1" transform="translate(-133.192 -206.367)">
+      <path id="Union_1" data-name="Union 1" d="M7.869,37.426c-11.3-.235-8.243-16.191-4.239-21.785A22.988,22.988,0,0,1,13.9,7.867C8.726,3.843,7.16,0,7.16,0S26.368,9.951,45.448,9.951,83.478,0,83.478,0,77.01,17.333,45.448,16.916c-9.763-.129-17.149-1.8-22.7-4.039a27.868,27.868,0,0,0-5.228,9.477C16.012,27.822,19.1,37.43,8.265,37.43,8.135,37.43,8,37.429,7.869,37.426Zm2.238-22.962a14.8,14.8,0,0,0-.825,7.889s1.148-5.8,3.768-8.949a10.592,10.592,0,0,1,4.5-3.069c-.786-.46-1.518-.929-2.2-1.4C14.084,10.114,11.259,11.913,10.106,14.464Z" transform="translate(149.714 217.864)" fill="#ff6348"/>
+      <path id="Path_3" data-name="Path 3" d="M631.746,202.25h0s-6.081-2.4-6.724-6.314-3.149-5.389-5.847-3.8-3.333,7.952,4.034,9.472S631.746,202.25,631.746,202.25Z" transform="translate(-484.115 14.861)" fill="#ff6348"/>
+      <path id="Path_4" data-name="Path 4" d="M626.609,191.668h0s-3.918,1.547-4.332,4.068-2.029,3.472-3.767,2.448-2.147-5.123,2.6-6.1S626.609,191.668,626.609,191.668Z" transform="translate(-476.895 30.771)" fill="#fff"/>
+      <text id="Unifood" transform="translate(175.681 248.807)" fill="#fff" font-size="12" font-family="SegoeUI-Semilight, Segoe UI" font-weight="300"><tspan x="0" y="0">Unifood</tspan></text>
+    </g>
+  </g>
+</svg>

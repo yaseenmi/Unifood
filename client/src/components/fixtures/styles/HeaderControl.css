@@ -1,0 +1,20 @@
+#header-control-container
+{
+    display: flex;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    height: -moz-fit-content;
+    align-items: center;
+}
+#header-control-container button
+{
+    margin: 0 1px;
+}
+@media screen and (max-width: 800px)
+{
+    #header-control-container button
+    {
+        margin: 0;
+    }   
+}

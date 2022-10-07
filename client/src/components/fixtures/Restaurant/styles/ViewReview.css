@@ -1,0 +1,25 @@
+
+.tooltip-des {
+    position: relative;
+    top: -30px;
+    display: inline-block;
+    opacity: 1;
+  }
+
+.tooltip-des .tooltiptext-des {
+  visibility: hidden;
+  text-align: center;
+  border-radius: 6px;
+  width: auto;
+  height: auto;
+  background-color: #999999;
+  color: black;
+  /* Position the tooltip */
+  position: absolute;
+  left: 0px;
+}
+
+.tooltip-des:hover .tooltiptext-des {
+  visibility: visible;
+}
+

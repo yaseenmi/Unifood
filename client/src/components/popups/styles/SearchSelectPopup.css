@@ -1,0 +1,111 @@
+.search-select-popup-container
+{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;     
+    overflow: auto;   
+}
+.search-select-popup-opacity-box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #707070;
+    opacity: .6;    
+}
+.search-select-popup
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: white;
+    border-radius: 10px;    
+    padding: 10px;      
+    transition: .3s;
+}
+.search-select-popup-top input[type="text"]
+{
+    max-width: 400px;
+    min-width: 300px;
+}
+.search-select-popup-top
+{
+    margin-bottom: 10px;
+}
+.search-select-popup-bottom
+{
+    border: 0 solid #eee;
+    border-top-width: 1px;
+    overflow: auto;
+    max-height: 300px;  
+    padding: 5px;
+    text-align: center;
+}
+.search-select-popup-item
+{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    cursor: pointer;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.search-select-popup-item:active
+{
+    background: #ccc;    
+}
+.search-select-popup-item span
+{
+
+}
+.search-select-popup-item i
+{
+
+}
+.search-select-popup-no-results
+{
+    margin-top: 20px;
+    text-align: center;
+    animation: fade-no-results .3s linear forwards;
+    opacity: 0;    
+}
+.search-select-popup-no-results-img
+{
+    height: 100px;
+    width: 200px;
+    margin-bottom: 20px;
+    animation: fade-no-results .3s linear forwards;
+    opacity: 0;
+}
+@keyframes fade-no-results
+{
+    to
+    {
+        opacity: 1;
+    }
+}
+.search-select-popup-loader
+{
+    height: 100%;
+    width: 100%;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-select-popup-loader .circle-loader
+{
+
+}

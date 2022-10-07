@@ -1,0 +1,294 @@
+#home-container 
+{
+    overflow: hidden;   
+}
+#intro-section
+{
+    width: 100%;
+    min-height: 100vh;    
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 3vw;
+    background-image: radial-gradient(circle at left, hsl(5, 100%, 95%) 0 20%, transparent 20% 100%),
+     radial-gradient(circle at left, hsl(5, 100%, 98%) 0 30%, white 30% 100%);
+    padding: 0 50px;
+}
+#intro-img
+{
+    height: calc(30vw + 60px);
+    margin-top: 71px;
+    opacity: 0;
+    animation: intro-img-animate .5s forwards;
+}
+@keyframes intro-img-animate 
+{
+    to    
+    {
+        opacity: 1;
+    }
+}
+#welcoming-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 71px;
+    opacity: 0;
+    transform: translateY(-50px);    
+    animation: welcoming-container-animate .5s forwards;
+    animation-delay: .2s;    
+}
+#home-values-section
+{
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+#home-values-container
+{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: stretch;    
+    grid-gap: 15px;
+}
+#home-values-title
+{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+@keyframes welcoming-container-animate 
+{
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }    
+}
+#welcoming-title
+{
+    font-size: 40px;    
+    font-weight: 700;
+}
+#welcoming-description
+{
+    margin-bottom: 50px;
+    font-size: x-large;
+    color: var(--highlighted-text-color);
+} 
+#intro-cl1
+{
+    animation-delay: 0;
+}
+#intro-cl2
+{
+    animation-delay: .3s;
+}
+#intro-cl3
+{
+    animation-delay: .5s;
+}
+@keyframes intro-cl-animation 
+{
+    to    
+    {
+        fill: var(--secondry-color);
+    }
+}
+.intro-cl
+{    
+    animation: intro-cl-animation 1.3s infinite;
+}
+#whats-unifood-section
+{
+    padding: 70px 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondry-color);
+    background-image: url("../../../assets/images/whats-unifood-ill.png");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#whats-unifood-section span::selection, #whats-unifood-section p::selection
+{
+    color: white;
+}
+#whats-unifood-section span, #whats-unifood-section p
+{
+    color: white;
+}
+#whats-unifood-section span
+{
+    font-size: xx-large;
+    font-weight: bold;
+}
+#whats-unifood-section p
+{
+    
+}
+/* Customer */
+#home-customer-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    gap: 50px;
+    background-image: radial-gradient(circle at right, hsl(5, 100%, 95%) 0 20%, transparent 20% 100%),
+    radial-gradient(circle at right, hsl(5, 100%, 98%) 0 30%, transparent 30% 100%);
+}
+#home-customer-section img
+{
+    height: calc(25vw + 60px);
+}
+#home-customer-section p
+{
+    color: var(--highlighted-text-color);
+}
+#home-customer-details
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+#home-customer-section span
+{
+    font-weight: bold;
+    font-size: xx-large;
+}
+#home-customer-section .default-fill-btn
+{
+    align-self: flex-end;
+}
+
+/* Restaurant */
+#home-restaurant-section
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 100px;
+    gap: 50px;
+    background-image: radial-gradient(circle at left, hsl(5, 100%, 95%) 0 20%, transparent 20% 100%),
+     radial-gradient(circle at left, hsl(5, 100%, 98%) 0 30%, transparent 30% 100%);
+}
+#home-restaurant-section img
+{
+    height: calc(25vw + 60px);
+}
+#home-restaurant-section p
+{
+    color: var(--highlighted-text-color);
+}
+#home-restaurant-details
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+#home-restaurant-section span
+{
+    font-weight: bold;
+    font-size: xx-large;
+}
+/* University */
+#home-university-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    gap: 50px;    
+    background-image: radial-gradient(circle at right, hsl(5, 100%, 95%) 0 20%, transparent 20% 100%),
+    radial-gradient(circle at right, hsl(5, 100%, 98%) 0 30%, transparent 30% 100%);
+}
+#home-university-section img
+{
+    height: calc(25vw + 60px);
+}
+#home-university-section p
+{
+    color: var(--highlighted-text-color);
+}
+#home-university-details
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+#home-university-section span
+{
+    font-weight: bold;
+    font-size: xx-large;
+}
+#home-university-section .default-fill-btn
+{
+    align-self: flex-end;
+}
+@media screen and (max-width: 780px) 
+{
+    #intro-section
+    {
+        flex-direction: column;
+        background-image: radial-gradient(circle at left bottom, hsl(5, 100%, 95%) 0 20%, transparent 20% 100%),
+     radial-gradient(circle at left bottom, hsl(5, 100%, 98%) 0 30%, white 30% 100%);
+     padding: 0 30px;
+    }
+    #intro-img
+    {
+        margin-top: 80px;
+    }
+    #welcoming-container
+    {
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    #whats-unifood-section
+    {
+        padding: 100px 30px;
+        background-size: 200%;
+    }
+    #home-customer-section, 
+    #home-restaurant-section, 
+    #home-university-section
+    {
+        flex-direction: column;        
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 30px;
+        background-image: radial-gradient(circle at left bottom, hsl(5, 100%, 95%) 0 20%, transparent 20% 100%),
+     radial-gradient(circle at left bottom, hsl(5, 100%, 98%) 0 30%, white 30% 100%);
+    }
+    #home-customer-details, 
+    #home-restaurant-details, 
+    #home-university-details
+    {
+        align-items: center;
+        text-align: center;
+    }
+    #home-customer-details .default-fill-btn, 
+    #home-restaurant-details .default-fill-btn, 
+    #home-university-details .default-fill-btn
+    {
+        align-self: stretch;
+    }
+    #home-values-section
+    {
+        padding: 100px 30px;
+    }
+}

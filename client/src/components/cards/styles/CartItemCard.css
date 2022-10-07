@@ -1,0 +1,114 @@
+.cart-item-card-container
+{
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    padding: 20px 0;
+    gap: 20px;
+    transition-duration: .3s;
+    transition-property: transform, opacity;
+}
+.cart-item-card-removed-state
+{
+    transform: translate(-100%);
+    opacity: 0;
+}
+.cart-item-card-container-disappear
+{
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.cart-item-card-container:not(:last-child)
+{
+    border: 0 solid #eee;
+    border-bottom-width: 1px;    
+}
+.cart-item-card-details
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;    
+    flex: 1;
+}
+.cart-item-card-details p
+{
+    font-size: x-large;
+    font-weight: bold;    
+    text-overflow: ellipsis;    
+    overflow: hidden;        
+    word-wrap: break-word;
+}
+.cart-item-card-photo
+{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    box-shadow: var(--main-bs);
+    background-color: #eee;
+    border: 1px solid #eee; 
+}
+.cart-item-card-counter
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.cart-item-card-counter .icon-btn
+{
+    border: 1px solid rgb(224, 224, 224);
+}
+.cart-item-card-counter p
+{
+
+}
+.cart-item-card-price-counter
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.cart-item-card-price
+{
+    font-weight: bold;
+    color: var(--success-color);
+}
+.trash-sep
+{
+    width: 1px;
+    background-color: #eee;
+    height: 30px;
+}
+.cart-item-card-price-counter .bi-trash
+{
+    font-size: larger;
+    color: var(--error-color);
+}
+@media screen and (max-width: 870px) 
+{
+    .cart-item-card-container
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cart-item-card-details p
+    {
+        font-size: medium;        
+    }
+    .cart-item-card-photo
+    {
+        height: 50px;
+        width: 50px ;
+    }     
+    .cart-item-card-price-counter
+    {
+        justify-content: space-between;
+        width: 100%;
+        gap: 0;
+    }  
+    .trash-sep
+    {
+        display: none;
+    }
+}

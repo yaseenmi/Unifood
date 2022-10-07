@@ -1,0 +1,61 @@
+.message-box-container
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100000;    
+}
+.message-box-container::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--opacity-box-color);
+}
+.message-box
+{
+    padding: 20px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);    
+    transition: .3s;
+    z-index: 1;
+    border-radius: 5px;
+    min-width: 300px;
+    max-width: 400px;
+    box-shadow: 2px 2px 20px 0 #70707060;    
+}
+.message-box p
+{
+    margin-bottom: 20px;
+}
+.message-box-controls
+{
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.message-box-controls button
+{
+    padding: 5px 15px;
+}
+.message-box h4
+{
+    color: var(--primary-color);
+    display: block;
+    display: flex;
+    align-items: center;
+}
+.message-box h4 i
+{
+    margin-right: 10px;
+    color: var(--primary-color);
+}

@@ -1,0 +1,32 @@
+.badges-container
+{
+    background-color: var(--error-color);
+    color: var(--secondry-text-color);
+    border-radius: 50px;
+    font-size: small;
+    font-weight: bold;
+    padding: 3px 9px;
+    width: fit-content;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    max-height: 25px;
+    white-space: nowrap;
+}
+.badges-container i
+{
+    font-size: small;    
+}
+.badges-container:hover .tool-tip
+{
+    visibility: visible;
+    opacity: 1;
+    top: 120%;
+    font-weight: normal;
+    z-index: 2000;
+}
